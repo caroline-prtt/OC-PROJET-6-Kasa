@@ -1,0 +1,16 @@
+.footer{
+    width: 100%;
+    padding: 66px 0 29px 0 ;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+
+    .footer_copyright{
+        margin: 0;
+        font-size: 24px;
+        color : white;
+    }
+}

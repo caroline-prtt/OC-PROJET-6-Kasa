@@ -1,12 +1,8 @@
 body{
-    margin: 0;
-    padding-top: 45px;
+    max-width: 1440px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 50px;
+    margin: 0px;
+    padding: 45px 0px 0px 0px;
 
     font-family: 'Montserrat', sans-serif;
 }
