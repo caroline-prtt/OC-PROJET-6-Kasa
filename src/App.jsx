@@ -1,15 +1,10 @@
 import { Fragment } from "react";
-import {BrowserRouter, Routes, Route} from "react-router-dom";
+import RoutesApp from "./components/routes/RoutesApp";
 
 function App() {
   return (
     <Fragment>
-      <BrowserRouter>
-      <Routes>
-        <Route></Route>
-      </Routes>
-      </BrowserRouter>
-      
+      <RoutesApp/>
     </Fragment>
   );
 }
