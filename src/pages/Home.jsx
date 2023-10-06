@@ -1,7 +1,7 @@
-function App() {
+function Home() {
   return (
       <p>ACCUEIL</p>
   );
 }
 
-export default App;
+export default Home;
