@@ -1,0 +1,26 @@
+.header{
+    max-width: 100vw;
+    width: calc(100vw - 200px);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar div{
+    display: flex;
+    align-items: center;
+    gap: 57px;
+}
+
+.navbar__link{
+    font-size: 24px;
+    font-weight: 500;
+    color: #FF6060;
+    text-decoration: none;
+}
+
+.navbar__link:hover{
+    text-decoration: underline;
+}
