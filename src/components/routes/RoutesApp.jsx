@@ -10,7 +10,7 @@ function RoutesApp () {
         <Routes>
             <Route path="/" element={<Home/>}></Route>
             <Route path="/about" element={<About/>}></Route>
-            <Route path="/accomodation" element={<Accomodation/>}></Route>
+            <Route path="/accomodation/:id" element={<Accomodation/>}></Route>
             <Route path="*" element={<PageNotFound/>}></Route>
         </Routes>
     )  
