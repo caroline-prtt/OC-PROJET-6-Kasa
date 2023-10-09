@@ -14,7 +14,7 @@ function Accomodation (){
     return (
         <>
             <p>Bienvenue sur la page présentant la fiche d'un logement ayant l'id suivant : {id}</p>
-            <img src={logement.cover}></img>
+            <img src={logement.cover} alt={logement.title}></img>
             <p>{logement.description}</p>
             <p>{logement.title}</p>
         </>)
