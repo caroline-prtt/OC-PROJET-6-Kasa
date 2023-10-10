@@ -13,4 +13,12 @@
         background-color: rgb(255, 255, 255);
         gap:20px;
     }
+
+    .gallery__link{
+        text-decoration: none;
+        
+        @media (max-width :768px){
+            width: 100%;
+        }
+    }
 }

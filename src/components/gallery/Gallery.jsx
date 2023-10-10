@@ -15,7 +15,7 @@ function Gallery (){
     return(
         <div className="gallery">
             {data.map((item) =>(
-                <Link key={item.id} to={`/accomodation/${item.id}`} onClick={scrollToTop} > 
+                <Link key={item.id} to={`/accomodation/${item.id}`} onClick={scrollToTop} className="gallery__link"> 
                     <Card
                         cover={item.cover}
                         altImage={item.description}

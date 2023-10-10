@@ -11,6 +11,13 @@ function Accomodation (){
 
     const logement = data.find(item => item.id === id);
 
+    if (!logement) {
+        // Si aucun logement avec cet ID n'est trouvé, vous pouvez gérer cette situation, par exemple, en affichant un message d'erreur.
+        return <div>Logement non trouvé</div>;
+
+        // Mettre le lien vers la page 404 !!!
+      }
+
     return (
         <>
             <p>Bienvenue sur la page présentant la fiche d'un logement ayant l'id suivant : {id}</p>
