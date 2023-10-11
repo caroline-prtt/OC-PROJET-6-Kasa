@@ -13,15 +13,21 @@
         border-radius: 10px;
         z-index: 2;
 
-        .collapse_header__title{
+        .collapse__header__title{
             margin: 0;
             color:#FFFFFF;
         }
 
-        img{
+        .collapse__header__button{
             width: 32px;
             height: 32px;
             cursor: grab;
+            transition: transform ease-out 300ms;
+
+            &--open{
+                transform: rotate(0.5turn);
+                transition: transform ease-out 300ms;
+            }
         }
     }
 
