@@ -6,24 +6,24 @@ function Collapse(props){
 
     // création et initalisation du State pour l'ouverture et fermeture collapse
     // [nomdustate, nomfonctionquimetàjour] = usestate(initialisationdustate)
-    const [opening, setIsOpen] = useState(false);
+    const [open, setOpen] = useState(false);
 
     //Fonction change l'état du state de false à true / false etc..
-    function changeStateOpening (){
-        setIsOpen(!opening);
+    function changeStateOpen (){
+        setOpen(!open);
     };
 
     //ICONE : Condition pour nom de la classe de l'icone selon état ouverture
-    const buttonClassName = opening ? "collapse__header__button--open" : "collapse__header__button" ;
+    const buttonClassName = open ? "collapse__header__button--open" : "collapse__header__button" ;
 
     //COLLAPSE CONTENT : condition pour classname
-    const collapseContentClassName = opening ? "collapse__content" : "collapse__content--closed"
+    const collapseContentClassName = open ? "collapse__content" : "collapse__content--closed"
 
     return(
         <div className="collapse">
             <div className="collapse__header">
                 <h3 className="collapse__header__title">{props.title}</h3>
-                <img src={icone} onClick={changeStateOpening} className={`${buttonClassName} rotate`} alt="icone flêche pour l'ouverture et la fermeture du collapse"/>
+                <img src={icone} onClick={changeStateOpen} className={buttonClassName} alt="icone flêche pour l'ouverture et la fermeture du collapse"/>
             </div>
             <div className={collapseContentClassName}>
                 <p>{props.content}</p>

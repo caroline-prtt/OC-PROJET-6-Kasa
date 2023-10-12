@@ -31,15 +31,13 @@
         }
     }
 
-
     .collapse__content{
         background-color: #F6F6F6;
         margin-top: -10px;
         padding: 30px 20px 20px 20px;
         border-radius: 0 10px;
         z-index: 1;
-
-        // transition : all 1s;
+        transition: 300ms;
 
         p{
             margin: 0;
@@ -48,7 +46,8 @@
         }
 
         &--closed{
-               
+            transition: 300ms;
+            
             p{
                 display: none;
             }
