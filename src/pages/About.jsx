@@ -11,10 +11,13 @@ function About (){
     return (
         <main>
           <Banner img={imageBannerAbout}/>
-          <Collapse title="Fiabilité" content={aboutFiability}/>
-          <Collapse title="Respect" content={aboutRespect}/>
-          <Collapse title="Service" content={aboutService}/>
-          <Collapse title="Sécurité" content={aboutSecurity}/>
+          <div className="about__accordeon">
+            <Collapse title="Fiabilité" content={aboutFiability}/>
+            <Collapse title="Respect" content={aboutRespect}/>
+            <Collapse title="Service" content={aboutService}/>
+            <Collapse title="Sécurité" content={aboutSecurity}/>
+          </div>
+          
         </main>   
     );
 }

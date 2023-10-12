@@ -16,18 +16,13 @@ function Collapse(props){
     //ICONE : Condition pour nom de la classe de l'icone selon état ouverture
     const buttonClassName = open ? "collapse__header__button--open" : "collapse__header__button" ;
 
-    //COLLAPSE CONTENT : condition pour classname
-    const collapseContentClassName = open ? "collapse__content" : "collapse__content--closed"
-
     return(
-        <div className="collapse">
+        <div className={`collapse ${open && 'open'}`}>
             <div className="collapse__header">
                 <h3 className="collapse__header__title">{props.title}</h3>
                 <img src={icone} onClick={changeStateOpen} className={buttonClassName} alt="icone flêche pour l'ouverture et la fermeture du collapse"/>
             </div>
-            <div className={collapseContentClassName}>
-                <p>{props.content}</p>
-            </div> 
+            <div className="collapse__content">{props.content}</div> 
         </div>
     )
 }
