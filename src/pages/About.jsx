@@ -17,7 +17,6 @@ function About (){
             <Collapse title="Service" content={aboutService}/>
             <Collapse title="Sécurité" content={aboutSecurity}/>
           </div>
-          
         </main>   
     );
 }

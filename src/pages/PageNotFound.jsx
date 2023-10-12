@@ -1,5 +1,11 @@
+import Error from "../components/error/Error"
+
 function PageNotFound (){
-    return (<p>Page Not Found - Error 404</p>)
+    return (
+        <main>
+            <Error />
+        </main>
+    )
 }
 
 export default PageNotFound;
