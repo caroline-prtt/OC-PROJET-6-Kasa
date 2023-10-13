@@ -42,11 +42,11 @@ function Carrousel(props) {
             {/* condition si plusieurs images alors les boutons et le conteur apparaissent */}
             {hasMultipleImages ? (
             <> 
-            <div className="carrousel__controls">
+            <div className="carrousel__controls buttons">
                 <img className="carrousel__controls__buttons" src={buttonPrev} onClick={prevImage} alt="bouton carrousel previous"></img>
                 <img className="carrousel__controls__buttons" src={buttonNext} onClick={nextImage} alt="bouton carrousel next" ></img>
             </div>
-            <div className="carrousel__counter">
+            <div className="carrousel__controls counter">
                 <span>{`${imageId + 1}/${images.length}`}</span>
             </div>
             </>
