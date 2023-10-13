@@ -11,6 +11,34 @@ function Carrousel(props) {
     //State de l'id de l'image visualisée dans le carroussel (NB : tableau donc premier id à zéro)
     const [imageId, setimageId] = useState(0);
 
+    //fonction pour l'animation des images lors du changement de photo
+    const animationImageTransition = () => {
+        
+        const imageElement = document.querySelector(".carrousel__image img");
+    
+        if (imageElement) {
+            // Définit une transition pour les propriétés "transform" et "opacity"
+            imageElement.style.transition = "transform 300ms, opacity 300ms";
+            // Réduit progressivement l'opacité de l'image pour créer un effet de fondu en laissant 15 % d'opacité.
+            imageElement.style.opacity = 0.85;
+            // Réduit la taille de l'image à 97 % de sa taille d'origine pour créer un effet de réduction vers le centre.
+            imageElement.style.transform = "scale(0.97)";
+
+            // Après un court délai (200 millisecondes), réinitialisez les propriétés.
+            setTimeout(() => {
+                // Désactive temporairement la transition pour réinitialiser les propriétés sans animation.
+                imageElement.style.transition = "none";
+                // Rétablit complètement l'opacité de l'image (1) et réinitialise la position (aucun déplacement ni réduction).
+                imageElement.style.opacity = 1;
+                imageElement.style.transform = "none";
+                // Réactivez la transition pour les futurs changements d'image.
+                setTimeout(() => {
+                    imageElement.style.transition = "transform 300ms, opacity 300ms";
+                }, 0);
+            }, 200); // Ce délai détermine la durée pendant laquelle l'animation du fondu vers le centre se produit.
+        }
+    }
+
     const nextImage = () => {
         if (imageId === images.length - 1) {
             // Si nous sommes déjà à la dernière image, revenir à la première
