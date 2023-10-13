@@ -31,8 +31,7 @@ function Carrousel(props) {
                 // Rétablit complètement l'opacité de l'image (1) et réinitialise la position (aucun déplacement ni réduction).
                 imageElement.style.opacity = 1;
                 imageElement.style.transform = "none";
-                // Réactive la transition pour les futurs changements d'image.
-                // (Désactive temporairement puis réactive pour éviter que l'animation ne se déclenche immédiatement)
+                // Réactivez la transition pour les futurs changements d'image.
                 setTimeout(() => {
                     imageElement.style.transition = "transform 300ms, opacity 300ms";
                 }, 0);
