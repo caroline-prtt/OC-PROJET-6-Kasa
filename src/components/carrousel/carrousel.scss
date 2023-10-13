@@ -16,6 +16,7 @@
             width: calc(100vw - 200px);
             height: 415px;
             object-fit: cover;
+            border-radius: 25px;
 
             @media (max-width :768px){
                 width: calc(100vw - 40px);
@@ -23,6 +24,7 @@
 
             @media (max-width : 640px){
                 height: 255px;
+                border-radius: 10px;
             }
         }
     }
