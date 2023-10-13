@@ -42,7 +42,7 @@
     &__button{
         width: 32px;
         height: 32px;
-        cursor: grab;
+        cursor: pointer;
         transition: transform 300ms ease-out;
 
         &--open{
