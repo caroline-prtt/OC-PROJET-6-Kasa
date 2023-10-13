@@ -16,6 +16,7 @@
             width: calc(100vw - 200px);
             height: 415px;
             object-fit: cover;
+            border-radius: 25px;
 
             @media (max-width :768px){
                 width: calc(100vw - 40px);
@@ -23,6 +24,7 @@
 
             @media (max-width : 640px){
                 height: 255px;
+                border-radius: 10px;
             }
         }
     }
@@ -32,58 +34,50 @@
         width: calc(100vw - 200px);
         height: 415px;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        z-index: 2;
 
         @media (max-width :768px){
             width: calc(100vw - 40px);
         }
+
         @media (max-width : 640px){
             height: 255px;
         }
 
-        img{
-            padding: 25px;
-            cursor: pointer;
+        &.buttons{
+            justify-content: space-between;
+            align-items: center;
+            z-index: 2;
 
-            @media (max-width :1024px){
-                height: 50px;
+            img{
                 padding: 25px;
-                
+                cursor: pointer;
+                @media (max-width :1024px){
+                    height: 50px;
+                    padding: 25px;
+                }
+                @media (max-width :550px){
+                    height: 24px;
+                    padding: 10px;
+                }
+            }
+        }
+
+        &.counter{
+            justify-content: center;
+            align-items: flex-end;
+            z-index: 1;
+            font-size: 18px;
+            font-weight: 500;
+            color:#FFFFFF;
+        
+            @media (max-width : 425px){
+                display: none;
             }
 
-            @media (max-width :550px){
-                padding: 10px;
-                height: 24px;
+            span{
+                padding: 25px;
             }
         }
-    }
-
-    &__counter{
-        position: absolute;
-        font-size: 18px;
-        font-weight: 500;
-        color: #FFFFFF;
-        width: calc(100vw - 200px);
-        height: 415px;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        z-index: 1;
-
-        @media (max-width :768px){
-            width: calc(100vw - 40px);
-        }
-        @media (max-width : 640px){
-            height: 255px;
-        }
-        @media (max-width : 425px){
-            display: none;
-        }
-
-        span{
-            padding: 25px;
-        }
-    }
+    
+    } 
 }
