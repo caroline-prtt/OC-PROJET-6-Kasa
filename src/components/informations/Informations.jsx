@@ -16,9 +16,9 @@ function Informations (props){
     
         for (let i = 1; i <= maxStars; i++) {
             if (i <= numericRating) {
-                stars.push(<i key={i} className="fa-solid fa-star" style={{ color: '#ff6060' }} ></i>);
+                stars.push(<i key={`star${i}`} className="fa-solid fa-star" style={{ color: '#ff6060'}} ></i>);
             } else {
-                stars.push(<i key={i} className="fa-solid fa-star" style={{ color: '#e3e3e3' }} ></i>);
+                stars.push(<i key={`star${i}`} className="fa-solid fa-star" style={{ color: '#e3e3e3' }} ></i>);
             }
         }
     
@@ -26,7 +26,7 @@ function Informations (props){
     }
 
     const listequipments = props.equipments.map((equipment, index) => (
-        <li key={index}>{equipment}</li>
+        <li key={`equipment${index}`}>{equipment}</li>
     ))
 
     return (
@@ -37,15 +37,15 @@ function Informations (props){
                     <h2 className="informations__header__titleandtags title">{props.title}</h2>
                     <p className="informations__header__titleandtags location">{props.location}</p>
                     <div className="informations__header__titleandtags tags">
-                        {props.tags.map((word) => (
-                            <div className="informations__header__titleandtags tag">{word}</div>
+                        {props.tags.map((tag, index) => (
+                            <div key={`tag${index}`} className="informations__header__titleandtags tag">{tag}</div>
                         ))}
                     </div>
                 </div>
                 <div className="informations__header__hostandrating">
                     <div className="informations__header__hostandrating host">
-                        <img src={props.hostpicture} alt={`Portrait de ${props.hostname}`}></img>
                         <p>{props.hostname}</p>
+                        <img src={props.hostpicture} alt={`Portrait de ${props.hostname}`}></img>
                     </div>
                     <div className="informations__header__hostandrating rating">
                         {ratingStars(rating)}
@@ -54,7 +54,7 @@ function Informations (props){
             </div>
 
             <div className="informations__collapses">
-                <Collapse title="Description" content={props.description}/>
+                <Collapse title="Description" content={props.description}/> 
                 <Collapse title="Équipements" content={listequipments}/>
             </div>
 
