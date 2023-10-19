@@ -18,7 +18,6 @@ function Gallery (){
                 <Link key={item.id} to={`/accomodation/${item.id}`} onClick={scrollToTop} className="gallery__link"> 
                     <Card
                         cover={item.cover}
-                        altImage={item.description}
                         title={item.title}
                     />
                 </Link>
