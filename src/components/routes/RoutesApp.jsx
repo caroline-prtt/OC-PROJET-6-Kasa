@@ -8,7 +8,7 @@ import PageNotFound from "../../pages/PageNotFound";
 function RoutesApp () {
     return(
         <Routes>
-            <Route path="/OC-PROJET-6-Kasa" element={<Home/>}></Route>
+            <Route path="/" element={<Home/>}></Route>
             <Route path="/about" element={<About/>}></Route>
             <Route path="/accomodation/:id" element={<Accomodation/>}></Route>
             <Route path="*" element={<PageNotFound/>}></Route>
