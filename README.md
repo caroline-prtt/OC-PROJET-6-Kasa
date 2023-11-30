@@ -4,6 +4,8 @@
 
 ![image de couverture](https://user.oc-static.com/upload/2022/06/24/16560899769906_FR_811_P8_Banner-Kasa%20%281%29.png)
 
+https://caroline-prtt.github.io/OC-PROJET-6-Kasa/
+
 ## Le scénario
 
 La mission consiste à réaliser avec React le nouveau site de Kasa, un site de location immobilière, et ce conformément aux diverses [contraintes techniques](https://drive.google.com/file/d/1iVik5ZsT38BGJtiRfqZqJkJ_Y4cPNmYk/view?usp=sharing) qui nous ont été communiquées.
