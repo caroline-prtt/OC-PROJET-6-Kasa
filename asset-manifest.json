@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/OC-PROJET-6-Kasa/static/css/main.a29e41ec.css",
-    "main.js": "/OC-PROJET-6-Kasa/static/js/main.bad07c3c.js",
+    "main.js": "/OC-PROJET-6-Kasa/static/js/main.323fd4ae.js",
     "static/media/image-banner-about.jpg": "/OC-PROJET-6-Kasa/static/media/image-banner-about.a75277651dea0758fdce.jpg",
     "static/media/image-banner-home.jpg": "/OC-PROJET-6-Kasa/static/media/image-banner-home.d322d05a7444cf43c4f9.jpg",
     "index.html": "/OC-PROJET-6-Kasa/index.html",
     "main.a29e41ec.css.map": "/OC-PROJET-6-Kasa/static/css/main.a29e41ec.css.map",
-    "main.bad07c3c.js.map": "/OC-PROJET-6-Kasa/static/js/main.bad07c3c.js.map"
+    "main.323fd4ae.js.map": "/OC-PROJET-6-Kasa/static/js/main.323fd4ae.js.map"
   },
   "entrypoints": [
     "static/css/main.a29e41ec.css",
-    "static/js/main.bad07c3c.js"
+    "static/js/main.323fd4ae.js"
   ]
 }
